@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumbialingo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    section {
+      padding: 90px;
+      margin: 0px; 100px;
+      border: 10px solid #dbeaff;
+    }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para dispositivos medianos y tablets en orientación horizontal */
+@media (min-width: 768px) and (max-width: 991px) {
+  .title {
+    margin-bottom: 0;
+    font-size: 40px
+  }
+
+  .sau{
+    height: 120vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+/* Estilos para tablets y pantallas más pequeñas en orientación horizontal */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 1200px) {
+}
+
+		    body {
+        line-height: 1.5; /* Cambiar el interlineado según necesidades */
+      font-family: 'Arial Black', sans-serif; /* Cambiar la fuente según necesidades */
+    }
+    .justificar {
+      text-align: justify;
+    }
+    .contenedor {
+      margin-top: 50; /* Establece el margen superior a 0 para reducir el espacio entre el título y el contenedor */
+      padding-top: 20; /* Establece el relleno superior a 0 para reducir el espacio entre el título y el contenedor */
+    }
+body {
+  position: relative;
+}
+    .custom-paragraph {
+        display: inline-block;
+        max-width: 500px; /* Cambiar el ancho máximo según necesidades */
+        white-space: pre-line;
+    }
+
+.column-container {
+  display: flex;
+}
+
+.column1 {
+  padding: 10px;
+  margin-right: 80px; /* Espacio entre las columnas */
+}
+
+.column2 {
+  padding: 10px;
+  margin-left: 20px; /* Espacio entre las columnas */
+}
+
+
+        h1 {
+            color: #333;
+        }
+
+        .input-container {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .output-container {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+		
+    header {
+      background-color: #327ef2; /* Azul */
+      color: white;
+      padding: 0px;
+      text-align: center;
+      font-family: 'Arial Black', sans-serif; /* Fuente llamativa */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      max-height: 130px; /* Ajusta la altura del logo */
+      width: auto;
+      margin-left: 40px; /* Ajusta el margen izquierdo del logo */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 70px;
+      cursor: pointer;
+      font-size: 30px; /* Tamaño del texto del menú */
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #home {
+      color: black;
+    }
+
+    #section1 {
+      color: black;
+    }
+
+    #section2 {
+      color: black;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+    }
+
+    .column {
+      width: 100%; /* Ajusta según sea necesario */
+    }
+
+    .contact-section {
+      background-color: #292929;
+      text-align: center;
+      padding: 6px;
+      margin-top: 20px;
+      color: gray; /* Color del texto en la sección de contacto */
+    }
+    .section3 {
+      background-color: #B7B7B7;
+      padding: 6px;
+      margin-top: 20px;
+      color: white; /* Color del texto en la sección de contacto */
+    }
+    .hidden {
+      display: none;
+    }
+
+    .intro h2 {
+      font-size: 130px; /* Ajusta el tamaño del título de introducción */
+    }
+    .intro h1 {
+      font-size: 40px; /* Ajusta el tamaño del título de introducción */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+    <div class="logo">
+      <img src="C:\Users\PC\Desktop\Cumbialingo\img\2.png" alt="Logo">
+    </div>
+    <div class="navigation">
+      <nav>
+        <a onclick="showSection('home')">Inicio</a>
+        <a onclick="showSection('section1')">ENG - ESP</a>
+        <a onclick="showSection('section2')">NAHUAT - ESP</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+	<div class="contenedor">
+    <div class="intro">
+      <h2>CUMBIALINGO</h2>
+	<p>Transformando Palabras, Uniendo Mundos.</p>
+    </div>
+    </div>
+
+    <div class="two-column">
+      <div class="column1">
+	  <br>
+	  <br>
+        <img src="C:\Users\PC\Desktop\cumbialingo\img\1.png" alt="Imagen" width="300" height="400">
+      </div>
+      <div class="column2">
+        <div class="contenedor">
+          <div class="custom-paragraph">
+              <h1>¿Qué es Cumbialingo?</h1>
+            <p class="justificar">Cumbialingo es traductor en línea desarrollado por cuatro estudiantes de bachillerato del CCSA en San Miguel, El Salvador; unidos por nuestra pasión por los idiomas y la cultura. Nuestra misión abarca la traducción del inglés al español y la preservación del náhuatl, conectando comunidades y enriqueciendo la herencia cultural de nuestra tierra. Aspiramos a liderar esta iniciativa y contribuir a la diversidad en El Salvador.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="section3">
+    <div class="two-column">
+      <div class="contenedor">
+        <div class="column1">
+          <div class="custom-paragraph">
+              <h1>¿Quiénes somos?</h1>
+            <p class="justificar">Somos un apasionado equipo de cuatro estudiantes de bachillerato, pertenecientes al segundo año, sección A, del Centro Cultural Salvadoreño de San Miguel, El Salvador. Nos une un profundo interés por los idiomas y la cultura de nuestra tierra, y estamos comprometidos en hacer una diferencia significativa en nuestra sociedad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="contenedor">
+          <div class="custom-paragraph">
+              <h1>¿Cuál es nuestra misión?</h1>
+            <p class="justificar">Nuestra misión es clara y motivadora: eliminar las barreras del idioma en El Salvador. Reconocemos que la comunicación efectiva es esencial para el progreso, la inclusión y el entendimiento mutuo. Por lo tanto, nos esforzamos por facilitar la comunicación entre las personas que hablan diferentes idiomas, en particular, el inglés y el náhuatl, para construir puentes que conecten culturas y comunidades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+    <footer>
+      <div class="contact-section">
+        <h3>Contacto</h3>
+        <p>Ponte en contacto con nosotros:</p>
+        <p>cumbialingo@gmail.com</p>
+    <a href="https://instagram.com/cumbialingo?igshid=NzZlODBkYWE4Ng==" target="_blank" class="instagram-button">
+        <img src="C:\Users\PC\Desktop\Cumbialingo\img\instagram-icon.png" alt="Imagen" width="60" height="60" alt="Instagram" class="instagram-icon">
+    </a>
+      </div>
+    </footer>
+  </section>
+
+  <section id="section1" class="hidden">
+    <div class="two-column">
+      <div class="column1">
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+    <div class="intro">
+    <h1>Traductor Inglés/Español</h1>
+	</div>
+    <div class="input-container">
+        <input type="text" id="texto_a_traducir" placeholder="Ingrese el texto">
+        <button id="traducir_btn">Traducir</button>
+        <button id="cambiar_idioma_btn">Cambiar Idioma</button>
+    </div>
+    <div class="output-container">
+        <h2>Texto traducido:</h2>
+        <p id="texto_traducido"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const traducirBtn = document.getElementById("traducir_btn");
+            const textoATraducir = document.getElementById("texto_a_traducir");
+            const textoTraducido = document.getElementById("texto_traducido");
+            const cambiarIdiomaBtn = document.getElementById("cambiar_idioma_btn");
+            let idiomaDestino = "es";
+
+            cambiarIdiomaBtn.addEventListener("click", function () {
+                if (idiomaDestino === "es") {
+                    idiomaDestino = "en";
+                    cambiarIdiomaBtn.textContent = "Español a Inglés";
+                } else {
+                    idiomaDestino = "es";
+                    cambiarIdiomaBtn.textContent = "Inglés a Español";
+                }
+            });
+
+            traducirBtn.addEventListener("click", function () {
+                const texto = textoATraducir.value;
+                if (texto.trim() !== "") {
+                    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${idiomaDestino}&dt=t&q=${encodeURI(
+                        texto
+                    )}`;
+                    
+                    fetch(url)
+                        .then((response) => response.json())
+                        .then((data) => {
+                            const traduccion = data[0][0][0];
+                            textoTraducido.textContent = traduccion;
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                        });
+                } else {
+                    alert("Por favor, ingrese un texto.");
+                }
+            });
+        });
+    </script>
+      </div>
+    <div class="column2">
+        <h1>Inglés</h1>
+		<div class="custom-paragraph">
+        <img src="C:\Users\PC\Desktop\Cumbialingo\img\imagen.png" alt="Imagen" width="400" height="200">
+        <p class="justificar">La traducción del inglés es esencial en nuestro trabajo debido a su relevancia global. El inglés es ampliamente utilizado en los ámbitos académico, empresarial, tecnológico y cultural. Al ofrecer traducciones precisas y confiables del inglés al español y viceversa, contribuimos a que nuestros compatriotas tengan acceso a información valiosa y oportunidades en un mundo cada vez más interconectado.</p>
+      </div>
+      </div>
+    </div>
+	  <footer>
+    <div class="contact-section">
+      <h3>Contacto</h3>
+      <p>Ponte en contacto con nosotros:</p>
+      <p>cumbialingo@gmail.com</p>
+    </div>
+	</footer>
+  </section>
+
+  <section id="section2" class="hidden">
+    <div class="two-column">
+      <div class="column1">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traductor Nahuat/Español</title>
+</head>
+<body>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+    <div class="intro">
+<h1>Traductor Nahuat/Español</h1>
+</div>
+<div class="input-container">
+    <label for="inputPalabra">Ingresa una palabra en español o náhuatl:</label>
+	<br>
+    <input type="text" id="inputPalabra" placeholder="Ejemplo: hola">
+    <button onclick="traducir()">Traducir</button>
+    <p id="resultado"></p>
+</div>
+
+    <script>
+        // Diccionario de traducción (sustituye con tus propias traducciones)
+        var diccionario_traducciones = {
+            "hola": "niltze",
+            "mundo": "tlalticpac",
+            "rojo": "yolistli",
+            "agua": "atl",
+            "sol": "tonatiuh",
+            "luna": "metztli",
+            "cielo": "tlalticpac",
+            "tierra": "tlalli",
+            "montaña": "yohualtepetl",
+            "árbol": "quahuitl",
+            "flor": "xochitl",
+            "fuego": "yollotl",
+            "aire": "tlalli",
+            "animal": "miquiztli",
+            "perro": "itzcuintli",
+            "gato": "miztli",
+            "pájaro": "quetzal",
+            "pez": "ayotl",
+            "mano": "maitl",
+            "pie": "icpalli",
+            "cabeza": "tlacatli",
+            "ojo": "necuitl",
+            "oreja": "yacatl",
+            "boca": "tlaxcalli",
+            "nariz": "nenepilli",
+            "comida": "tlacualtl",
+            "bebida": "octli",
+            "dormir": "yauh",
+            "despertar": "xiuh",
+            "mojado": "ajwituk",
+            "nueve": "chiknawi",
+			"siete": "chikume",
+			"ocho": "chikwey",
+			"rojo": "chiltik",
+			"sangre": "esti",
+			"cielo": "ikajku",
+			"carne": "inakayu",
+			"blanco": "istak",
+			"fruta": "itakil",
+			"montaña": "kojtan",
+			"niño": "kunet",
+			"corto": "kutu",
+			"100": " se tzunti, sentzunti",
+			"una cora": "Se coraj",
+			"un dólar": "Se dólar",
+			"diez dólares": "Majtakti dólar",
+			"cien dólares": "Se tzunti dólar",
+			"1000": "sé mil",
+			"reloj": "Orapiani",
+			"pulsera": "Makusti",
+			"anillo": "Aniyu",
+			"pollo": "Puyuj",
+			"jocote": "Shukutet",
+			"tortilla": "Tamal",
+			"gallina": "Tijlan",
+			"tomate": "Tumat",
+			"vino": "Iayu shukumekat",
+			"güisquil": "Witzkil",
+			"nance": "Nan",
+			"carne": "Nakat",
+			"piña": "Matzaj",
+			"carne de": "Inakayu",
+			"carne de cerdo": "Inakayu kuyamet",
+			"sopa depescado": "Iayu michin",
+			"sopa de": "Iayu",
+			"jugo de": "Iayu",
+			"jugo de naranja": "Iayu lala",
+			"coco": "Kuku",
+			"mango": "Mangu",
+			"Ellos venden plátanos": "Yejemet kinamakat pujpula",
+			"Vendo comales": "Niknamaka kujkumal",
+			"Ustedes comen muchas pupusas": "Anmejemet ankikwat miak kukumutzin.",
+			"canasto": "Chikiwit",
+			"hamaca": "Chayunti",
+			"cuchillo": "Kuchiyuj",
+			"piedra de moler": "Metat",
+			"sábana": "Kwenyu",
+			"cobija": "Kwenyu",
+			"petate": "Petat",
+			"huacal": "Wajkal",
+			"queso": "Quesuj",
+			"frijoles": "Et",
+			"pupusa": "Kukumutzin",
+			"loroco": "Masakilit",
+			"atol": "Atul",
+			"tortuga": "Ayutzin",
+			"cangrejo": "Tekwisij",
+			"pasado mañana": "Wipta",
+			"calendario": "",
+			"Hubo un terremoto": "Nemik se talulin",
+			"buen año para ti": "Yek shiwit mupal",
+			"octubre": "Metzti majtakti",
+			"noviembre": "Metzti majtakti se",
+			"diciembre": "Metzti majtakti ume",
+			"septiembre": "Metzti chiknawi",
+			"agosto": "Metzti chikwéy",
+			"julio": "Metzti chikume",
+			"junio": "Metzti chikwasen",
+			"mayo": "Metzti makwil",
+			"abril": "Metzti nawi",
+			"marzo": "Metzti yey",
+			"febrero": "Metzti ume",
+			"enero": "Metzti sé",
+			"cada día": "Sejse tunal",
+			"ayer": "Yalua",
+			"mañana": "Musta",
+			"luego": "Neman / nemanha",
+			"ahora": "Ashan / an",
+			"hoy": "Ashan / an",
+			"pasado mañana": "Wipta",
+			"Anteayer": "Biepta",
+			"El año pasado": "Ne shiwit panutuk",
+			"El año que viene": "Ne shiwit witz",
+			"Hace tiempo": "Ikman",
+			"mundo": "Taltikpak/Sental",
+			"catedral ": "Wey tiupan",
+			"Cipitío": "Tzipit",
+			"diablo": "Kujkul",
+			"acerca de": "Ipanpa",
+			"fiestas": "Ijilwit",
+			"bebe": "Kiuni",
+			"le gusta": "Igustuj",
+			"cementerio": "Panteón",
+			"baila": "Mijtutia",
+			"¿a dónde?": "¿kanka?",
+			"día de la cruz ": "Tunal ipal ne wendish",
+			"fin de año": "Tamik shiwit/ itamilishiwit",
+			"semana santa": "Wey Semanaj u Santuj",
+			"día del padre": "Tunal ipal ne tuteku",
+			"año nuevo": "Shiwit witz",
+			"día de la madre": "Tunal ipal ne tunan",
+			"flor": "Shuchit",
+			"casa": "Kal",
+			"muerte": "Mikilis",
+			"viento": "Ejekat",
+			"luna": "Metzti",
+			"hace poco": "Sanuk",
+			"verano": "Tunalku",
+			"mono": "Asumati/ usuma",
+			"agua": "At",
+			"invierno": "Shupan",
+			"época de lluvia": "Shupan",
+			"deidad de la lluvia": "Tlálok/Tláluk/Taluk",
+			"dormir": "Kuchi",
+			"estar": "Nemi",
+			"vivir": "Nemi",
+			"entrar": "Kalaki",
+			"hablar": "Taketza",
+			"salir": "Kisa",
+			"levantarse": "Muketza",
+			"llegar": "Ajsi",
+			"comer": "Takwa",
+			"correr": "Mutalua",
+			"leer": "Amatachia",
+			"escribir": "Tawawasua",
+			"regresar": "Mukwepa",
+			"acostarse": "Muteka",
+			"jugar": "Mawiltia",
+			"pasear": "Pashalua",
+			"caminar": "Nejnemi",
+			"beber agua": "Ati",
+			"tener sed": "Amiki",
+			"poder": "Weli",
+			"bañarse": "Maltia",
+			"trabaja": "tekiti",
+			"trabajo": "nitekiti",
+			"trabajas": "titekiti",
+			"estudias": "timumachtia",
+			"A las cuatro y media": "Ka nawi wan tajku",
+			"ayudar": "palewia",
+			"querer": "neki",
+			"guardar": "ana",
+			"hacer": "chiwa",
+			"olvidar": "elkawa",
+			"recordar": "elnamiki",
+			"decirle a": "ilwia",
+			"ver": "ita",
+			"escuchar": "kaki",
+			"agarrar": "itzkia",
+			"cazar": "itzkia",
+			"traducir": "pata",
+			"llamar": "nutza",
+			"saber": "mati",
+			"dar": "maka",
+			"comer": "kwa",
+			"doler": "kukua",
+			"vender": "namaka",
+			"comprar": "kua",
+			"construir": "ketza",
+			"construir": "ketza",
+			"limpiar": "pupua",
+			"poner": "talia",
+			"abrir": "tapua",
+			"cerrar": "tzakwa",
+			"amar": "tasujta",
+			"llevar": "wika",
+			"golpear": "chalua",
+			"aguantar": "selia",
+			"yo como elotes": "Naja nikwa ejelut",
+			"yo como": "Naja nitakwa",
+			"abran el libro": "Ankitapuat ne amachti",
+			"cierren el cuaderno": "Ankitzakwat ne amatzin",
+        };
+
+        function traducir() {
+            var palabra = document.getElementById("inputPalabra").value.toLowerCase();
+            var resultado;
+
+            if (palabra in diccionario_traducciones) {
+                resultado = "Traducción al náhuatl: " + diccionario_traducciones[palabra];
+            } else if (palabra in diccionario_traducciones_inversas) {
+                resultado = "Traducción al español: " + diccionario_traducciones_inversas[palabra];
+            } else {
+                resultado = "Palabra no encontrada en el diccionario.";
+            }
+
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+
+</body>
+</html>
+
+      </div>
+    <div class="column2">
+        <h1>Nahuat</h1>
+		<div class="custom-paragraph">
+        <img src="C:\Users\PC\Desktop\Cumbialingo\img\pipiles.png" alt="Imagen" width="400" height="200">
+        <p class="justificar">El Náhuatl es una parte fundamental de nuestra identidad cultural. Es una lengua autóctona que ha persistido a lo largo de la historia de El Salvador. Traducir el Náhuatl al español y viceversa es nuestra manera de preservar y promover esta rica herencia lingüística. Al hacerlo, no solo honramos nuestras raíces, sino que también permitimos que las generaciones futuras accedan a esta lengua ancestral y continúen su legado.</p>
+      </div>
+      </div>
+    </div>
+	  <footer>
+    <div class="contact-section">
+      <h3>Contacto</h3>
+      <p>Ponte en contacto con nosotros:</p>
+      <p>cumbialingo@gmail.com</p>
+	  <br>
+	  <h3>Bibliografía</h3>
+	  <p>https://www.mined.gob.sv/nawat/modulos/taksalis_2/L_TEXTO%202.pdf</p>
+    </div>
+	</footer>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.add('hidden');
+      });
+
+      const sectionToShow = document.getElementById(sectionId);
+      sectionToShow.classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
